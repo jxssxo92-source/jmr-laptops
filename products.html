@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - JMR Laptops</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <script src="js/firebase-init.js" defer></script>
+    <script src="js/auth.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-laptop-code"></i> JMR Laptops
+        </div>
+
+        <nav id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="order-history.html">Order History</a>
+
+            <!-- Cart button in navbar -->
+            <a id="cartBtn" class="cart-button">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count-badge" id="cartCount">0</span>
+            </a>
+
+            <!-- Profile dropdown container -->
+            <div id="profileDropdown" class="profile-dropdown hidden"></div>
+        </nav>
+    </div>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="products">
+        <h1>Available Laptops</h1>
+
+        <div class="product-grid" id="productGrid">
+            <!-- JS loads products here -->
+        </div>
+    </section>
+
+    <!-- CART PANEL OVERLAY -->
+    <div class="cart-panel-overlay" id="cartOverlay"></div>
+
+    <!-- CART PANEL -->
+    <div class="cart-panel" id="cartPanel">
+        <div class="cart-panel-header">
+            <h2>Your Cart</h2>
+            <span class="cart-panel-close" id="closeCart">✖</span>
+        </div>
+
+        <div class="cart-items" id="cartItems"></div>
+
+        <div class="cart-panel-footer">
+            <div class="cart-total-row">
+                <span>Total:</span>
+                <span id="cartTotal">£0</span>
+            </div>
+
+            <button class="cart-checkout-btn" onclick="window.location='checkout.html'">
+                Checkout
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>

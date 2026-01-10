@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMR Laptops</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <!-- Firebase Init + Auth -->
+    <script src="js/firebase-init.js" defer></script>
+    <script src="js/auth.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-laptop-code"></i> JMR Laptops
+        </div>
+
+        <nav id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="order-history.html">Order History</a>
+
+            <!-- Cart button -->
+            <a id="cartBtn" class="cart-button">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count-badge" id="cartCount">0</span>
+            </a>
+
+            <!-- Profile dropdown -->
+            <div id="profileDropdown" class="profile-dropdown hidden"></div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Affordable & Reliable Laptops</h1>
+        <p>Family-owned business selling quality laptops</p>
+        <a href="products.html" class="btn">Browse Laptops</a>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+        <div class="feature-card">
+            <i class="fa-solid fa-check"></i>
+            <h3>Tested Devices</h3>
+            <p>All laptops are fully tested</p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fa-solid fa-tags"></i>
+            <h3>Best Prices</h3>
+            <p>Affordable family pricing</p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Trusted Business</h3>
+            <p>Honest and transparent sales</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 JMR Laptops</p>
+    </footer>
+
+</body>
+</html>

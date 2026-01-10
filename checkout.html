@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - JMR Laptops</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/checkout.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<script src="js/firebase-init.js" defer></script>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">JMR Laptops</div>
+        <nav id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="order-history.html">Order History</a>
+    <div id="profileDropdown" class="profile-dropdown hidden"></div>
+</nav>
+    </div>
+
+    <div class="checkout-container">
+        <h1>Checkout</h1>
+
+        <div class="checkout-grid">
+            <div class="checkout-form">
+                <label>Name</label>
+                <input type="text" id="name">
+
+                <label>Email</label>
+                <input type="email" id="email">
+
+                <label>Address</label>
+                <textarea id="address"></textarea>
+
+                <button class="checkout-submit-btn" id="submitOrder">Place Order</button>
+            </div>
+
+            <div class="checkout-summary">
+                <h3>Order Summary</h3>
+                <div id="summaryItems"></div>
+
+                <div class="checkout-summary-total">
+                    <span>Total:</span>
+                    <span id="summaryTotal">£0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

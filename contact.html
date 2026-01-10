@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | JMR Laptops</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<script src="js/firebase-init.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <i class="fa-solid fa-laptop-code"></i> JMR Laptops
+    </div>
+    <nav id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="order-history.html">Order History</a>
+    <div id="profileDropdown" class="profile-dropdown hidden"></div>
+</nav>
+
+</header>
+
+<section class="contact">
+    <h1><i class="fa-solid fa-envelope"></i> Contact Us</h1>
+    <form onsubmit="event.preventDefault(); alert('Message sent!');">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 JMR Laptops</p>
+</footer>
+
+</body>
+</html>

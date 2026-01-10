@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Dell XPS 13",
+        "specs": "Intel i7, 16GB RAM, 512GB SSD",
+        "price": 950,
+        "image": "images/dell-xps13.jpg"
+    },
+    {
+        "id": 2,
+        "name": "MacBook Pro 14\"",
+        "specs": "M1 Pro, 16GB RAM, 512GB SSD",
+        "price": 1800,
+        "image": "images/macbook-pro14.jpg"
+    },
+    {
+        "id": 3,
+        "name": "HP Spectre x360",
+        "specs": "Intel i5, 8GB RAM, 256GB SSD",
+        "price": 850,
+        "image": "images/hp-spectre.jpg"
+    }
+]
